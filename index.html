@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Binance Glance - Even G2</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Binance Glance</h1>
+      <div id="mode-line">Mode: starting...</div>
+      <div class="glasses" aria-label="Simulated Even G2 display, 576 by 288">
+        <pre id="focus"></pre>
+        <pre id="watch"></pre>
+        <pre id="status"></pre>
+      </div>
+      <div class="controls">
+        <button id="btn-next" type="button">Tap: next coin</button>
+        <button id="btn-up" type="button">Swipe up: alert +</button>
+        <button id="btn-down" type="button">Swipe down: alert -</button>
+      </div>
+      <p class="note">
+        Read-only public market data from the Binance public API. No account,
+        no API key, no trading, no funds, no financial advice. On the Even G2
+        glasses the same screen is driven by temple/ring gestures: tap cycles
+        the coin, swipes set the alert level, double-tap exits.
+      </p>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

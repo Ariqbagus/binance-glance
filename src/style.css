@@ -1,0 +1,103 @@
+:root {
+  color-scheme: dark;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+body {
+  margin: 0;
+  background: #0a0f0a;
+  color: #c8f5c8;
+  display: flex;
+  justify-content: center;
+}
+
+#app {
+  max-width: 640px;
+  padding: 24px 16px 48px;
+}
+
+h1 {
+  font-size: 20px;
+  margin: 0 0 4px;
+  color: #7dff8a;
+}
+
+#mode-line {
+  font-size: 12px;
+  color: #6fbf77;
+  margin-bottom: 12px;
+}
+
+/* Mirror of the 576x288 G2 canvas: monochrome green, high contrast. */
+.glasses {
+  width: 576px;
+  max-width: 100%;
+  aspect-ratio: 2 / 1;
+  background: #031503;
+  border: 2px solid #2f7a37;
+  border-radius: 8px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.glasses pre {
+  margin: 0;
+  white-space: pre-wrap;
+  font: inherit;
+  color: #8dff97;
+}
+
+.glasses #focus {
+  border: 2px solid #57d665;
+  padding: 8px;
+  font-size: 17px;
+  line-height: 1.35;
+  flex: 1;
+}
+
+.glasses #watch,
+.glasses #status {
+  border: 1px solid #2f7a37;
+  padding: 6px 8px;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.glasses #status.alerting {
+  color: #eaffea;
+  border-color: #8dff97;
+  background: #0d3a12;
+  font-weight: 700;
+}
+
+.controls {
+  display: flex;
+  gap: 8px;
+  margin-top: 14px;
+  flex-wrap: wrap;
+}
+
+.controls button {
+  background: #10360f;
+  color: #8dff97;
+  border: 1px solid #2f7a37;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background: #17501a;
+}
+
+.note {
+  font-size: 12px;
+  line-height: 1.6;
+  color: #6fbf77;
+  max-width: 576px;
+}
